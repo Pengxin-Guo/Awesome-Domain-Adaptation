@@ -26,4 +26,4 @@ The first work to propose this setting.
 
 ------
 
-Please create an issue if you find we missed any settings.
+Please create an issue if you find we missed any setting.
