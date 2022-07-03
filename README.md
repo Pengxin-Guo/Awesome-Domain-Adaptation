@@ -23,3 +23,7 @@ The first work to propose this setting.
 ## Open Set Domain Adaptation (OSDA)
 
 ## Universal Domain Adaptation (UDA)
+
+------
+
+Please create an issue if you find we missed any settings.
