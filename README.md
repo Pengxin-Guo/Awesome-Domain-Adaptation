@@ -3,6 +3,14 @@ Various Domain Adaptation Setting.
 
 The first work to propose this setting.
 
+## Unsupervised Domain Adaptation (UDA)
+
+## Semi-Supervised Domain Adaptation (SSDA)
+
+## Multi-Source DA (MSDA)
+
+## Multi-Target DA (MTDA)
+
 ## Domain Generalization (DG)
 
 [**DICA**] Muandet, K., Balduzzi, D., & Schölkopf, B. [Domain generalization via invariant feature representation](https://proceedings.mlr.press/v28/muandet13.html "DICA"). **ICML**, 2013.
@@ -23,6 +31,16 @@ The first work to propose this setting.
 ## Open Set Domain Adaptation (OSDA)
 
 ## Universal Domain Adaptation (UDA)
+
+## Self-Supervised Domain Adaptation (SSDA)
+
+## Distant Domain Adaptation
+
+## Source-Free Domain Adaptation
+
+## Federated Domain Adaptation
+
+## Noisy Universal Domain Adaptation
 
 ------
 
