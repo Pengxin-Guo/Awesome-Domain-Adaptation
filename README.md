@@ -57,6 +57,15 @@ Saito, K., Yamamoto, S., Ushiku, Y., & Harada, T. [Open set domain adaptation by
 - **Dataset**: Office-31, Office-Home, ImageNet-Caltech, VisDA2017.
 - **Code**: [https://github.com/thuml/PADA](https://github.com/thuml/PADA).
 
+## Universal Domain Adaptation (UDA)
+
+[**UAN**] You, K., Long, M., Cao, Z., Wang, J., & Jordan, M. I. [Universal domain adaptation](https://openaccess.thecvf.com/content_CVPR_2019/html/You_Universal_Domain_Adaptation_CVPR_2019_paper.html "UAN"). **CVPR**, 2019.
+
+- **Motivation**: They introduce Universal Domain Adaptation (**UDA**) that requires **no prior knowledge on the label sets**. For a given source label set and a target label set, they may contain a common label set and hold a private label set respectively, bringing up an additional category gap. UDA requires a model to either (1) classify the target sample correctly if it is associated with a label in the common label set, or (2) mark it as “unknown” otherwise. 
+- **Method**: They propose Universal Adaptation Network (**UAN**). It quantifies sample-level transferability to discover the common label set and the label sets private to each domain, thereby **promoting the adaptation in the automatically discovered common label set** and **recognizing the “unknown” samples** successfully.
+- **Dataset**: Office-31, Office-Home, VisDA2017, ImageNet-Caltech.
+- **Code**: [https://github.com/thuml/Universal-Domain-Adaptation](https://github.com/thuml/Universal-Domain-Adaptation).
+
 ## Blending-Target Domain Adaptation (BTDA)
 
 [**AMEAN**] Chen, Z., Zhuang, J., Liang, X., & Lin, L. [Blending-target domain adaptation by adversarial meta-adaptation networks](https://openaccess.thecvf.com/content_CVPR_2019/html/Chen_Blending-Target_Domain_Adaptation_by_Adversarial_Meta-Adaptation_Networks_CVPR_2019_paper.html "AMEAN"). **CVPR**, 2019.
@@ -73,8 +82,6 @@ Liu, Z., Miao, Z., Pan, X., Zhan, X., Lin, D., Yu, S. X., & Gong, B. [Open compo
 - **Method**: They propose a new approach based on two technical insights into OCDA: 1) a curriculum domain adaptation strategy to bootstrap generalization across domains in a datadriven self-organizing fashion and 2) a memory module to increase the model’s agility towards novel domains.
 - **Dataset**: C-Digits, C-Faces, C-Driving, C-Mazes (designed by themselves).
 - **Code**: [https://github.com/zhmiao/OpenCompoundDomainAdaptation-OCDA](https://github.com/zhmiao/OpenCompoundDomainAdaptation-OCDA).
-
-## Universal Domain Adaptation (UDA)
 
 ## Self-Supervised Domain Adaptation (SSDA)
 
