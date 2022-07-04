@@ -89,7 +89,13 @@ Liu, Z., Miao, Z., Pan, X., Zhan, X., Lin, D., Yu, S. X., & Gong, B. [Open compo
 
 ## Source-Free Domain Adaptation
 
-## Federated Domain Adaptation
+## Unsupervised Federated Domain Adaptation (UFDA)
+
+[**FADA**] Peng, X., Huang, Z., Zhu, Y., & Saenko, K. [Federated Adversarial Domain Adaptation](https://openreview.net/forum?id=HJezF3VYPB "FADA"). **ICLR**, 2020.
+
+- **Motivation**:  They address the problem of **transferring knowledge from the decentralized nodes to a new node with a different data domain**, without requiring any additional supervision from the user. They define this novel problem Unsupervised Federated Domain Adaptation (**UFDA**).
+- **Method**: They propose Federated Adversarial Domain Adaptation (**FADA**) which aims to tackle domain shift in a federated learning system through adversarial techniques.
+- **Dataset**: Digit-Five, Office-Caltech10, DomainNet, Amazon Review.
 
 ## Noisy Universal Domain Adaptation
 
