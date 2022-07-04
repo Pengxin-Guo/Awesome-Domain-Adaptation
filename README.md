@@ -7,9 +7,9 @@ The first work to propose this setting.
 
 ## Semi-Supervised Domain Adaptation (SSDA)
 
-## Multi-Source DA (MSDA)
+## Multi-Source Domain Adaptation (MSDA)
 
-## Multi-Target DA (MTDA)
+## Multi-Target Domain Adaptation (MTDA)
 
 ## Domain Generalization (DG)
 
@@ -17,10 +17,6 @@ The first work to propose this setting.
 
 - **Motivation**: This paper investigates domain generalization: **How to take knowledge acquired from an arbitrary number of related domains and apply it to previously unseen domains?**
 - **Method**:  They propose Domain-Invariant Component Analysis (**DICA**), a kernel-based optimization algorithm that learns an invariant transformation by minimizing the dissimilarity across domains, whilst preserving the functional relationship between input and output variables.
-
-## Blending-Target Domain Adaptation (BTDA)
-
-## Open Compound Domain Adaptation (OCDA)
 
 ## Partial Domain Adaptation (PDA)
 
@@ -30,6 +26,16 @@ The first work to propose this setting.
 - **Method**: They present Partial Adversarial Domain Adaptation (**PADA**), which simultaneously **aligns the feature distributions of the source and target data in the shared label space** and more importantly, **identifies the irrelevant source data belonging to the outlier source classes and down-weighs their importance** automatically. 
 - **Dataset**: Office-31, Office-Home, ImageNet-Caltech, VisDA2017.
 - **Code**: [https://github.com/thuml/PADA](https://github.com/thuml/PADA).
+
+## Blending-Target Domain Adaptation (BTDA)
+
+[**AMEAN**] Chen, Z., Zhuang, J., Liang, X., & Lin, L. [Blending-target domain adaptation by adversarial meta-adaptation networks](https://openaccess.thecvf.com/content_CVPR_2019/html/Chen_Blending-Target_Domain_Adaptation_by_Adversarial_Meta-Adaptation_Networks_CVPR_2019_paper.html "AMEAN"). **CVPR**, 2019.
+
+- **Motivation**: In this paper, they consider a more realistic transfer scenario: **our target domain is comprised of multiple sub-targets implicitly blended with each other**, so that learners could not identify which sub-target each unlabeled sample belongs to.
+- **Method**: They propose Adversarial Meta-Adaptation Network (**AMEAN**), a adversarial transfer framework incorporating meta-learner dynamically inducing meta-sub-targets to auto-design adversarial adaptation losses, which effectively achieve transfers in BTDA.
+- **Dataset**: MNIST, MNIST-M, SVHN, USPS, Synthetic Digits, Office-31, Office-Home.
+
+## Open Compound Domain Adaptation (OCDA)
 
 ## Open Set Domain Adaptation (OSDA)
 
