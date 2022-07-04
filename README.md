@@ -18,7 +18,7 @@ The first work to propose this setting.
 
 - **Motivation**: Unsupervised domain adaptation (UDA) conventionally assumes labeled source samples coming from a single underlying source distribution. Whereas **in practical scenario, labeled data are typically collected from diverse sources**.
 - **Method**: They propose a deep cocktail network (**DCTN**) to battle the domain and category shifts among multiple sources.
-- **Dataset**: Office-31, ImageCLEF-DA, Digits-five.
+- **Datasets**: Office-31, ImageCLEF-DA, Digits-five.
 
 ## Multi-Target Domain Adaptation (MTDA)
 
@@ -32,7 +32,7 @@ The first work to propose this setting.
 [**CCSA**] Motiian, S., Piccirilli, M., Adjeroh, D. A., & Doretto, G. [Unified deep supervised domain adaptation and generalization](https://openaccess.thecvf.com/content_iccv_2017/html/Motiian_Unified_Deep_Supervised_ICCV_2017_paper.html "CCSA"). **ICCV**, 2017.
 
 - **Method**: The main idea is to exploit the Siamese architecture to learn an embedding subspace that is discriminative, and where mapped visual domains are semantically aligned and yet maximally separated.
-- **Dataset**: VLCS, MNIST.
+- **Datasets**: VLCS, MNIST.
 
 ## Open Set Domain Adaptation (OSDA)
 
@@ -40,13 +40,13 @@ The first work to propose this setting.
 
 - **Motivation**: They propose open set domain adaptation (**OSDA**). In this setting, **both source and target domain contain images that do not belong to the classes of interest**. Furthermore, **the target domain contains images that are not related to any image in the source domain and vice versa**.
 - **Method**: They map the feature space of the source domain to the target domain. The mapping is estimated by assigning images in the target domain to some categories of the source domain. The assignment problem is defined by a binary linear program that also includes an implicit outlier handling, which discards images that are not related to any image in the source domain.
-- **Dataset**: Office-31, Cross-Dataset Analysis.
+- **Datasets**: Office-31, Cross-Dataset Analysis.
 
 Saito, K., Yamamoto, S., Ushiku, Y., & Harada, T. [Open set domain adaptation by backpropagation](https://openaccess.thecvf.com/content_ECCV_2018/html/Kuniaki_Saito_Adversarial_Open_Set_ECCV_2018_paper.html). **ECCV**, 2018.
 
 - **Motivation**: They present a more challenging open set domain adaptation (**OSDA**) that **does not provide any unknown source samples**, and they propose a method for it. That is, they propose a method where they have **access to only known source samples and unlabeled target samples** for open set domain adaptation.
 - **Method**: They propose a new approach of adversarial learning that enables generator to **separate target samples into known and unknown classes**.
-- **Dataset**: Office-31, VisDA2017.
+- **Datasets**: Office-31, VisDA2017.
 
 ## Partial Domain Adaptation (PDA)
 
@@ -54,7 +54,7 @@ Saito, K., Yamamoto, S., Ushiku, Y., & Harada, T. [Open set domain adaptation by
 
 - **Motivation**: Existing domain adaptation methods generally assume that the source and the target domains share identical label space but follow different distributions. However, in real applications, it is usually not easy to find a source domain with identical label space as the target domain of interest. Towards the aforementioned ambition, they introduce a novel **partial domain adaptation** problem, which assumes that **the target label space is a subspace of the source label space**.
 - **Method**: They present Partial Adversarial Domain Adaptation (**PADA**), which simultaneously **aligns the feature distributions of the source and target data in the shared label space** and more importantly, **identifies the irrelevant source data belonging to the outlier source classes and down-weighs their importance** automatically. 
-- **Dataset**: Office-31, Office-Home, ImageNet-Caltech, VisDA2017.
+- **Datasets**: Office-31, Office-Home, ImageNet-Caltech, VisDA2017.
 - **Code**: [https://github.com/thuml/PADA](https://github.com/thuml/PADA).
 
 ## Universal Domain Adaptation (UDA)
@@ -63,7 +63,7 @@ Saito, K., Yamamoto, S., Ushiku, Y., & Harada, T. [Open set domain adaptation by
 
 - **Motivation**: They introduce Universal Domain Adaptation (**UDA**) that requires **no prior knowledge on the label sets**. For a given source label set and a target label set, they may contain a common label set and hold a private label set respectively, bringing up an additional category gap. UDA requires a model to either (1) classify the target sample correctly if it is associated with a label in the common label set, or (2) mark it as “unknown” otherwise. 
 - **Method**: They propose Universal Adaptation Network (**UAN**). It quantifies sample-level transferability to discover the common label set and the label sets private to each domain, thereby **promoting the adaptation in the automatically discovered common label set** and **recognizing the “unknown” samples** successfully.
-- **Dataset**: Office-31, Office-Home, VisDA2017, ImageNet-Caltech.
+- **Datasets**: Office-31, Office-Home, VisDA2017, ImageNet-Caltech.
 - **Code**: [https://github.com/thuml/Universal-Domain-Adaptation](https://github.com/thuml/Universal-Domain-Adaptation).
 
 ## Blending-Target Domain Adaptation (BTDA)
@@ -72,7 +72,7 @@ Saito, K., Yamamoto, S., Ushiku, Y., & Harada, T. [Open set domain adaptation by
 
 - **Motivation**: In this paper, they consider a more realistic transfer scenario: **our target domain is comprised of multiple sub-targets implicitly blended with each other**, so that learners could not identify which sub-target each unlabeled sample belongs to.
 - **Method**: They propose Adversarial Meta-Adaptation Network (**AMEAN**), a adversarial transfer framework incorporating meta-learner dynamically inducing meta-sub-targets to auto-design adversarial adaptation losses, which effectively achieve transfers in BTDA.
-- **Dataset**: MNIST, MNIST-M, SVHN, USPS, Synthetic Digits, Office-31, Office-Home.
+- **Datasets**: MNIST, MNIST-M, SVHN, USPS, Synthetic Digits, Office-31, Office-Home.
 
 ## Open Compound Domain Adaptation (OCDA)
 
@@ -80,7 +80,7 @@ Liu, Z., Miao, Z., Pan, X., Zhan, X., Lin, D., Yu, S. X., & Gong, B. [Open compo
 
 - **Motivation**: They study an open compound domain adaptation (**OCDA**) problem, in which **the target is a compound of multiple homogeneous domains without domain labels**, reflecting realistic data collection from mixed and novel situations.
 - **Method**: They propose a new approach based on two technical insights into OCDA: 1) a curriculum domain adaptation strategy to bootstrap generalization across domains in a datadriven self-organizing fashion and 2) a memory module to increase the model’s agility towards novel domains.
-- **Dataset**: C-Digits, C-Faces, C-Driving, C-Mazes (designed by themselves).
+- **Datasets**: C-Digits, C-Faces, C-Driving, C-Mazes (designed by themselves).
 - **Code**: [https://github.com/zhmiao/OpenCompoundDomainAdaptation-OCDA](https://github.com/zhmiao/OpenCompoundDomainAdaptation-OCDA).
 
 ## Self-Supervised Domain Adaptation (SSDA)
@@ -95,9 +95,15 @@ Liu, Z., Miao, Z., Pan, X., Zhan, X., Lin, D., Yu, S. X., & Gong, B. [Open compo
 
 - **Motivation**:  They address the problem of **transferring knowledge from the decentralized nodes to a new node with a different data domain**, without requiring any additional supervision from the user. They define this novel problem Unsupervised Federated Domain Adaptation (**UFDA**).
 - **Method**: They propose Federated Adversarial Domain Adaptation (**FADA**) which aims to tackle domain shift in a federated learning system through adversarial techniques.
-- **Dataset**: Digit-Five, Office-Caltech10, DomainNet, Amazon Review.
+- **Datasets**: Digit-Five, Office-Caltech10, DomainNet, Amazon Review.
 
-## Noisy Universal Domain Adaptation
+## Noisy Universal Domain Adaptation (Noisy UniDA)
+
+Yu, Q., Hashimoto, A., & Ushiku, Y. [Divergence optimization for noisy universal domain adaptation](https://openaccess.thecvf.com/content/CVPR2021/html/Yu_Divergence_Optimization_for_Noisy_Universal_Domain_Adaptation_CVPR_2021_paper.html ""). **CVPR**, 2021.
+
+- **Motivation**: They consider a new realistic setting called Noisy UniDA, in which **classifiers are trained with noisy labeled data from the source domain** and unlabeled data with an unknown class distribution from the target domain.
+- **Method**: They introduce a two-head convolutional neural network framework to solve all problems simultaneously. Their network consists of one common feature generator and two classifiers with different decision boundaries. By optimizing the divergence between the two classifiers’ outputs, they can **detect noisy source samples**, **find “unknown” classes in the target domain**, and **align the distribution of the source and target domains**.
+- **Datasets**: Office-31, Office-Home, VisDA2017.
 
 ------
 
