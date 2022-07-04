@@ -34,6 +34,20 @@ The first work to propose this setting.
 - **Method**: The main idea is to exploit the Siamese architecture to learn an embedding subspace that is discriminative, and where mapped visual domains are semantically aligned and yet maximally separated.
 - **Dataset**: VLCS, MNIST.
 
+## Open Set Domain Adaptation (OSDA)
+
+[**ATI**] Panareda Busto, P., & Gall, J. [Open set domain adaptation](https://openaccess.thecvf.com/content_iccv_2017/html/Busto_Open_Set_Domain_ICCV_2017_paper.html "ATI"). **ICCV**, 2017.
+
+- **Motivation**: They propose open set domain adaptation (**OSDA**). In this setting, **both source and target domain contain images that do not belong to the classes of interest**. Furthermore, **the target domain contains images that are not related to any image in the source domain and vice versa**.
+- **Method**: They map the feature space of the source domain to the target domain. The mapping is estimated by assigning images in the target domain to some categories of the source domain. The assignment problem is defined by a binary linear program that also includes an implicit outlier handling, which discards images that are not related to any image in the source domain.
+- **Dataset**: Office-31, Cross-Dataset Analysis.
+
+Saito, K., Yamamoto, S., Ushiku, Y., & Harada, T. [Open set domain adaptation by backpropagation](https://openaccess.thecvf.com/content_ECCV_2018/html/Kuniaki_Saito_Adversarial_Open_Set_ECCV_2018_paper.html). **ECCV**, 2018.
+
+- **Motivation**: They present a more challenging open set domain adaptation (**OSDA**) that **does not provide any unknown source samples**, and they propose a method for it. That is, they propose a method where they have **access to only known source samples and unlabeled target samples** for open set domain adaptation.
+- **Method**: They propose a new approach of adversarial learning that enables generator to **separate target samples into known and unknown classes**.
+- **Dataset**: Office-31, VisDA2017.
+
 ## Partial Domain Adaptation (PDA)
 
 [**PADA**] Cao, Z., Ma, L., Long, M., & Wang, J. [Partial adversarial domain adaptation](https://openaccess.thecvf.com/content_ECCV_2018/html/Zhangjie_Cao_Partial_Adversarial_Domain_ECCV_2018_paper.html "PADA"). **ECCV**, 2018.
@@ -59,8 +73,6 @@ Liu, Z., Miao, Z., Pan, X., Zhan, X., Lin, D., Yu, S. X., & Gong, B. [Open compo
 - **Method**: They propose a new approach based on two technical insights into OCDA: 1) a curriculum domain adaptation strategy to bootstrap generalization across domains in a datadriven self-organizing fashion and 2) a memory module to increase the model’s agility towards novel domains.
 - **Dataset**: C-Digits, C-Faces, C-Driving, C-Mazes (designed by themselves).
 - **Code**: [https://github.com/zhmiao/OpenCompoundDomainAdaptation-OCDA](https://github.com/zhmiao/OpenCompoundDomainAdaptation-OCDA).
-
-## Open Set Domain Adaptation (OSDA)
 
 ## Universal Domain Adaptation (UDA)
 
