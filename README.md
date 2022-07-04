@@ -9,6 +9,17 @@ The first work to propose this setting.
 
 ## Multi-Source Domain Adaptation (MSDA)
 
+[**A-SVMs**] Yang, J., Yan, R., & Hauptmann, A. G. [Cross-domain video concept detection using adaptive svms](https://dl.acm.org/doi/abs/10.1145/1291233.1291276?casa_token=CRYiwLHWxVsAAAAA:CF81_j9sOX_mEGPCe9I-_DgD_Quqm4Iup2XCp_T2VBJL4XPZWDpgPsde4YW03Okkc6AN8cjmD8R6 "A-SVMs"). **MM**, 2007.
+
+- **Motivation**: how to transform existing classifier(s) into an effective classifier for a new dataset that only has a limited number of labeled examples.
+- **Method**: They propose Adaptive Support Vector Machines (**A-SVMs**) as a general method to adapt one or more existing classifiers of any type to the new dataset. It aims to learn the “delta function” between the original and adapted classifier using an objective function similar to SVMs.
+
+[**DCTN**] Xu, R., Chen, Z., Zuo, W., Yan, J., & Lin, L. [Deep cocktail network: Multi-source unsupervised domain adaptation with category shift](https://openaccess.thecvf.com/content_cvpr_2018/html/Xu_Deep_Cocktail_Network_CVPR_2018_paper.html "DCTN"). **CVPR**, 2018.
+
+- **Motivation**: Unsupervised domain adaptation (UDA) conventionally assumes labeled source samples coming from a single underlying source distribution. Whereas **in practical scenario, labeled data are typically collected from diverse sources**.
+- **Method**: They propose a deep cocktail network (**DCTN**) to battle the domain and category shifts among multiple sources.
+- **Dataset**: Office-31, ImageCLEF-DA, Digits-five.
+
 ## Multi-Target Domain Adaptation (MTDA)
 
 ## Domain Generalization (DG)
